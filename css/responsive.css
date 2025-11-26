@@ -305,4 +305,113 @@
             font-size: 1.5rem;
         }
     }
+
+    /* Proceedings Page Responsive */
+    @media (max-width: 768px) {
+        .proceedings-info {
+            grid-template-columns: 1fr;
+        }
+
+        .info-card {
+            padding: 2rem;
+        }
+
+        .proceedings-timeline {
+            padding-left: 1.5rem;
+        }
+
+        .timeline-item::before {
+            left: -1.9rem;
+        }
+
+        .proceedings-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .proceedings-card {
+            padding: 1.5rem;
+        }
+
+        .proceedings-card h4 {
+            padding-right: 0;
+            margin-top: 1rem;
+        }
+
+        .proceedings-year {
+            position: static;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .proceedings-stats {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .info-card {
+            padding: 1.5rem;
+        }
+
+        .info-icon {
+            font-size: 2.5rem;
+        }
+
+        .proceedings-timeline {
+            padding-left: 1rem;
+        }
+
+        .timeline-item::before {
+            left: -1.4rem;
+        }
+    }
+
+    /* Presentation Guidelines Page Responsive */
+    @media (max-width: 900px) {
+        .info-grid {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+    }
+
+    @media (max-width: 768px) {
+        .info-card {
+            padding: 2rem;
+        }
+
+        .info-icon {
+            font-size: 2.5rem;
+        }
+
+        .dates-reminder {
+            padding: 2rem;
+            margin: 2rem 1rem 0;
+        }
+
+        .dates-mini {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .info-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .info-card {
+            padding: 1.5rem;
+        }
+
+        .info-icon {
+            font-size: 2rem;
+        }
+
+        .dates-reminder {
+            padding: 1.5rem;
+        }
+
+        .date-mini-card {
+            padding: 1rem;
+        }
+    }
 }

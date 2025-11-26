@@ -788,3 +788,290 @@ footer {
     line-height: 1.6;
     margin: 0;
 }
+/* Proceedings Page Styles */
+.proceedings-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.info-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    border-left: 4px solid var(--bangkok-blue);
+}
+
+.info-icon {
+    font-size: 3rem;
+    color: var(--bangkok-gold);
+    margin-bottom: 1.5rem;
+}
+
+.info-card h3 {
+    color: var(--bangkok-blue);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.info-card p {
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+/* Proceedings Coming Soon */
+.proceedings-timeline {
+    margin-top: 2rem;
+    border-left: 3px solid var(--bangkok-gold);
+    padding-left: 2rem;
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.4rem;
+    top: 0.3rem;
+    width: 12px;
+    height: 12px;
+    background: var(--bangkok-red);
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px var(--bangkok-red);
+}
+
+.timeline-date {
+    font-weight: 700;
+    color: var(--bangkok-red);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.timeline-content {
+    color: var(--dark);
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 3px solid var(--bangkok-blue);
+}
+
+/* Previous Proceedings */
+.previous-proceedings {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid var(--bangkok-gold);
+}
+
+.proceedings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.proceedings-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--bangkok-blue);
+    position: relative;
+}
+
+.proceedings-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.proceedings-year {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: linear-gradient(135deg, var(--bangkok-blue), var(--bangkok-red));
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.proceedings-card h4 {
+    color: var(--bangkok-blue);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    padding-right: 80px;
+}
+
+.proceedings-card p {
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.proceedings-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+.stat i {
+    color: var(--bangkok-gold);
+}
+
+.proceedings-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--bangkok-blue);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.proceedings-link:hover {
+    background: var(--bangkok-red);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(193, 42, 53, 0.3);
+}
+/* Presentation Guidelines Page Styles */
+.info-sections {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid var(--bangkok-gold);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--bangkok-blue);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.info-icon {
+    font-size: 3rem;
+    color: var(--bangkok-gold);
+    margin-bottom: 1.5rem;
+}
+
+.info-card h4 {
+    color: var(--bangkok-blue);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.info-card p {
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.info-list {
+    list-style: none;
+    text-align: left;
+    margin-top: auto;
+}
+
+.info-list li {
+    padding: 0.5rem 0;
+    color: var(--dark);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.info-list li:before {
+    content: "•";
+    color: var(--bangkok-red);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Dates Reminder Section */
+.dates-reminder {
+    margin-top: 4rem;
+    padding: 3rem;
+    background: linear-gradient(135deg, var(--bangkok-blue), #2a4a8c);
+    border-radius: 12px;
+    color: white;
+}
+
+.dates-reminder .section-title h3 {
+    color: white;
+}
+
+.dates-reminder .section-title h3::after {
+    background-color: var(--bangkok-gold);
+}
+
+.dates-mini {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.date-mini-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.date-mini-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--bangkok-gold);
+}
+
+.date-mini-date {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
