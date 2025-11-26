@@ -507,3 +507,284 @@ footer {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.6);
 }
+
+/* Keynote Page Styles */
+.coming-soon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    text-align: center;
+}
+
+.coming-soon-content {
+    max-width: 600px;
+    padding: 3rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.coming-soon-icon {
+    font-size: 4rem;
+    color: var(--bangkok-gold);
+    margin-bottom: 1.5rem;
+}
+
+.coming-soon-content h3 {
+    font-size: 2.5rem;
+    color: var(--bangkok-blue);
+    margin-bottom: 1rem;
+}
+
+.coming-soon-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--gray);
+}
+
+.countdown-info {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--bangkok-blue), var(--bangkok-red));
+    color: white;
+    border-radius: 8px;
+}
+
+.countdown-info p {
+    color: white;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Previous Speakers Section */
+.previous-speakers {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid var(--bangkok-gold);
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.speaker-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--bangkok-blue);
+}
+
+.speaker-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.speaker-card.placeholder {
+    opacity: 0.7;
+}
+
+.speaker-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, var(--bangkok-blue), var(--bangkok-red));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.speaker-card h4 {
+    color: var(--bangkok-blue);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.speaker-affiliation {
+    color: var(--bangkok-red);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.speaker-topic {
+    color: var(--gray);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+/* Committee Page Styles */
+.committee-types {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid var(--bangkok-gold);
+}
+
+.committee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.committee-type-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid var(--bangkok-blue);
+}
+
+.committee-type-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.committee-icon {
+    font-size: 3rem;
+    color: var(--bangkok-red);
+    margin-bottom: 1.5rem;
+}
+
+.committee-type-card h4 {
+    color: var(--bangkok-blue);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.committee-type-card p {
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+/* Committee Members */
+.previous-committees {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid var(--bangkok-gold);
+}
+
+.committee-members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.committee-member {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--bangkok-gold);
+}
+
+.committee-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.committee-member.placeholder {
+    opacity: 0.7;
+}
+
+.member-avatar {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, var(--bangkok-blue), var(--bangkok-red));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.2rem;
+}
+
+.committee-member h4 {
+    color: var(--bangkok-blue);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.member-role {
+    color: var(--bangkok-red);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.member-affiliation {
+    color: var(--gray);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+/* Misc Page Styles */
+.info-categories {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid var(--bangkok-gold);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.category-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid var(--bangkok-blue);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.category-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, var(--bangkok-blue), var(--bangkok-red));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.category-card h4 {
+    color: var(--bangkok-blue);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.category-card p {
+    color: var(--gray);
+    line-height: 1.6;
+    margin: 0;
+}
